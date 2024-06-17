@@ -9,7 +9,8 @@ import org.springframework.data.annotation.Id;
 import java.io.Serializable;
 
 @Entity
-public class Employee implements Serializable{
+public class Employee implements Serializable {
+    @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false, updatable = false)
@@ -35,13 +36,7 @@ public class Employee implements Serializable{
         this.employeeCode = employeeCode;
     }
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -102,6 +97,14 @@ public class Employee implements Serializable{
                 ", imageUrl='" + imageUrl + '\'' +
                 ", employeeCode='" + employeeCode + '\'' +
                 '}';
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
 
