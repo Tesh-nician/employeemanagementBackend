@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>be.intec</groupId>
-	<artifactId>employeemanager</artifactId>
+	<artifactId>employeemanagerBackend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>employeemanager</name>
 	<description>Employee Manager App as Fullstack development exercise</description>
