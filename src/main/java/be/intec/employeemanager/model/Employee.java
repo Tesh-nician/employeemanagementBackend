@@ -11,7 +11,6 @@ import java.io.Serializable;
 @Entity
 public class Employee implements Serializable {
     @jakarta.persistence.Id
-    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false, updatable = false)
     private Long id;
@@ -27,7 +26,7 @@ public class Employee implements Serializable {
     public Employee() {
     }
 
-    public Employee(String name, String email, String jobTitle, String phone, String imageUrl, String employeeCode) {
+    public Employee(String name, String email, String job_title, String phone, String imageUrl, String employeeCode) {
         this.name = name;
         this.email = email;
         this.jobTitle = jobTitle;

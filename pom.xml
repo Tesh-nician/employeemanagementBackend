@@ -36,6 +36,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.narayana.jta</groupId>
+			<artifactId>narayana-jta</artifactId>
+			<version>5.10.6.Final</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -46,5 +53,8 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
+
 
 </project>
